@@ -1,5 +1,6 @@
 package com.morandev.ecommerce.infrastructure.entity;
 
+import com.morandev.ecommerce.domain.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,8 @@ public class UserEntity {
     private String direccion;
     private String numeroDeCelular;
     private String contrasenia;
+    @Enumerated(EnumType.STRING)
+    private UserType tipoDeUsuario;
     private LocalDateTime fechaDeCreacion;
 
 }

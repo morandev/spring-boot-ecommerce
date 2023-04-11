@@ -5,7 +5,7 @@ import com.morandev.ecommerce.domain.User;
 public interface IProductRepository { //PUERTO
 
     Iterable<Product> obtenerProductos();
-    Iterable<Product> obtenerProductoPorUsuario(User user);
+    Iterable<Product> obtenerProductosPorUsuario(User user);
     Product obtenerProductoPorId(Long productoId);
     Product guardarProducto(Product product);
     void eliminarProductoPorId(Long id);

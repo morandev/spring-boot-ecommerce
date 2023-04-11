@@ -19,4 +19,6 @@ public class Product {
 
     private LocalDateTime fechaDeCreacion;
     private LocalDateTime fechaDeActualizacion;
+
+    private User usuario;
 }

@@ -12,14 +12,14 @@ public class ProductService {
     }
 
     public Iterable<Product> obtenerProductos(){
-        return  productRepository.obtenerProductos()
+        return  productRepository.obtenerProductos();
     }
 
-    public Iterable<Product> obtenerProductoPorUsuario(User user){
-        return productRepository.obtenerProductoPorUsuario(user);
+    public Iterable<Product> obtenerProductosPorUsuario(User user){
+        return productRepository.obtenerProductosPorUsuario(user);
     }
 
-    public Product obtenerProductoPorID(Integer id){
+    public Product obtenerProductoPorID(Long id){
         return  productRepository.obtenerProductoPorId(id);
     }
 
@@ -27,7 +27,7 @@ public class ProductService {
         return   productRepository.guardarProducto(product);
     }
 
-    public void eliminarProductoPorID(Integer id){
+    public void eliminarProductoPorID(Long id){
         productRepository.eliminarProductoPorId(id);
     }
 }
