@@ -1,6 +1,5 @@
 package com.morandev.ecommerce.infrastructure.entity;
 
-import com.morandev.ecommerce.domain.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
